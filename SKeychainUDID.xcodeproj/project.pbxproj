@@ -13,6 +13,8 @@
 		3C80722F1E1F317C00C6A653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80722D1E1F317C00C6A653 /* Main.storyboard */; };
 		3C8072311E1F317C00C6A653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8072301E1F317C00C6A653 /* Assets.xcassets */; };
 		3C8072341E1F317C00C6A653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8072321E1F317C00C6A653 /* LaunchScreen.storyboard */; };
+		3C8072471E1F37A100C6A653 /* SKeychainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8072441E1F37A100C6A653 /* SKeychainHelper.m */; };
+		3C8072481E1F37A100C6A653 /* SKeychainUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8072461E1F37A100C6A653 /* SKeychainUDID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		3C8072301E1F317C00C6A653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C8072331E1F317C00C6A653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C8072351E1F317C00C6A653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8072431E1F37A100C6A653 /* SKeychainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKeychainHelper.h; sourceTree = "<group>"; };
+		3C8072441E1F37A100C6A653 /* SKeychainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKeychainHelper.m; sourceTree = "<group>"; };
+		3C8072451E1F37A100C6A653 /* SKeychainUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKeychainUDID.h; sourceTree = "<group>"; };
+		3C8072461E1F37A100C6A653 /* SKeychainUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKeychainUDID.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		3C8072231E1F317C00C6A653 /* SKeychainUDID */ = {
 			isa = PBXGroup;
 			children = (
+				3C8072421E1F37A100C6A653 /* Classes */,
 				3C8072271E1F317C00C6A653 /* AppDelegate.h */,
 				3C8072281E1F317C00C6A653 /* AppDelegate.m */,
 				3C80722A1E1F317C00C6A653 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				3C8072251E1F317C00C6A653 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C8072421E1F37A100C6A653 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C8072431E1F37A100C6A653 /* SKeychainHelper.h */,
+				3C8072441E1F37A100C6A653 /* SKeychainHelper.m */,
+				3C8072451E1F37A100C6A653 /* SKeychainUDID.h */,
+				3C8072461E1F37A100C6A653 /* SKeychainUDID.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8072481E1F37A100C6A653 /* SKeychainUDID.m in Sources */,
 				3C80722C1E1F317C00C6A653 /* ViewController.m in Sources */,
 				3C8072291E1F317C00C6A653 /* AppDelegate.m in Sources */,
 				3C8072261E1F317C00C6A653 /* main.m in Sources */,
+				3C8072471E1F37A100C6A653 /* SKeychainHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +327,7 @@
 				3C80723A1E1F317C00C6A653 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
